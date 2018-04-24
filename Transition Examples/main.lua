@@ -1,8 +1,10 @@
 -----------------------------------------------------------------------------------------
--- Title: WidgetsAndTransitions
--- Name: Ryoma Scott
--- Course: ICS2O/3C
--- This program shows a certain transition when its button is clicked
+--
+-- main.lua
+-- Transitions Examples
+-- Created by Wal Wal
+-- Started November 14
+--
 -----------------------------------------------------------------------------------------
 
 -- Hiding Status Bar
