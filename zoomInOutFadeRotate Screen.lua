@@ -114,7 +114,7 @@ function scene:show( event )
                 strokeWidth = 20,
 
                 -- Changing button colors (Default = not clicked, over = clicked)
-                fillColor = { default = { 0.004, 0.537, 1 }, over = { 1, 0.604, 0.004 } },
+                fillColor = { default = { 5, 1, 1 }, over = { 1, 0.604, 0.004 } },
                 strokeColor = { default = { 0.75, 0, 0 }, over = { 0.5, 0, 0 } },
                 
                 -- Creating text on button

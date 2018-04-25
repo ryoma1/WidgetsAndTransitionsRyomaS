@@ -57,7 +57,7 @@ function scene:create( event )
         bkg.height = display.contentHeight
 
         -- Setting color
-        bkg:setFillColor(  0.004, 0.537, 1 )
+        bkg:setFillColor(  0, 0, 0 )
 
         -- Sending to Back Layer
         bkg:toBack( )
@@ -382,11 +382,11 @@ function scene:show( event )
                 strokeWidth = 10,
 
                 -- Changing button colors (Default = not clicked, over = clicked)
-                fillColor = { default = { 1, 0.839, 0.004 }, over = { 1, 0.604, 0.004 } },
+                fillColor = { default = { 0, 0, 0 }, over = { 1, 0.604, 0.004 } },
                 strokeColor = { default = { 0.75, 0, 0 }, over = { 0.5, 0, 0 } },
                 
                 -- Creating text on button
-                label = "Fade", -- The text labeled on the button
+                label = "Disappear", -- The text labeled on the button
                 labelColor = { default = { 1, 1, 1 }, over = { 1, 1, 1 } },
                 font = Arial,
                 fontSize = 42,
@@ -412,14 +412,14 @@ function scene:show( event )
                 strokeWidth = 10,
 
                 -- Changing button colors (Default = not clicked, over = clicked)
-                fillColor = { default = { 0, 0, 1 }, over = { 0, 0, 0.5 } },
+                fillColor = { default = { 0, 0, 0 }, over = { 0, 0, 0.5 } },
                 strokeColor = { default = { 0.75, 0, 0 }, over = { 0.5, 0, 0 } },
                 
                 -- Creating text on button
-                label = "Cross Fade", -- The text labeled on the button
+                label = "Cross Disappear", -- The text labeled on the button
                 labelColor = { default = { 1, 1, 1 }, over = { 1, 1, 1 } },
                 font = Arial,
-                fontSize = 42,
+                fontSize = 32,
 
                 -- Button Functions
                 onRelease = Transition_CrossFade -- This function is executed when the touch of the button is Released
@@ -442,11 +442,11 @@ function scene:show( event )
                 strokeWidth = 10,
 
                 -- Changing button colors (Default = not clicked, over = clicked)
-                fillColor = { default = { 1, 0.2, 0.2 }, over = { 0.5, 0.1, 0.1 } },
+                fillColor = { default = { 0.5, 0056, 0 }, over = { 0.5, 0.1, 0.1 } },
                 strokeColor = { default = { 0.75, 0, 0 }, over = { 0.5, 0, 0 } },
                 
                 -- Creating text on button
-                label = "Zoom Out In", -- The text labeled on the button
+                label = "Move Out In", -- The text labeled on the button
                 labelColor = { default = { 1, 1, 1 }, over = { 1, 1, 1 } },
                 font = Arial,
                 fontSize = 42,
@@ -472,14 +472,14 @@ function scene:show( event )
                 strokeWidth = 10,
 
                 -- Changing button colors (Default = not clicked, over = clicked)
-                fillColor = { default = { 1, 0.6, 0.2 }, over = { 0.5, 0.3, 0.1 } },
+                fillColor = { default = { 0.5, 0056, 0 }, over = { 0.5, 0.3, 0.1 } },
                 strokeColor = { default = { 0.75, 0, 0 }, over = { 0.5, 0, 0 } },
                 
                 -- Creating text on button
-                label = "Zoom Out In Fade", -- The text labeled on the button
+                label = "Zoom Out In Disappear", -- The text labeled on the button
                 labelColor = { default = { 1, 1, 1 }, over = { 1, 1, 1 } },
                 font = Arial,
-                fontSize = 42,
+                fontSize = 22,
 
                 -- Button Functions
                 onRelease = Transition_ZoomOutInFade -- This function is executed when the touch of the button is Released
@@ -502,11 +502,11 @@ function scene:show( event )
                 strokeWidth = 10,
 
                 -- Changing button colors (Default = not clicked, over = clicked)
-                fillColor = { default = { 1, 1, 0.2 }, over = { 0.5, 0.5, 0.1 } },
+                fillColor = { default = { 0.5, 0056, 0 }, over = { 0.5, 0.5, 0.1 } },
                 strokeColor = { default = { 0.75, 0, 0 }, over = { 0.5, 0, 0 } },
                 
                 -- Creating text on button
-                label = "Zoom In Out", -- The text labeled on the button
+                label = "Move In Out", -- The text labeled on the button
                 labelColor = { default = { 0, 0, 0 }, over = { 0, 0, 0 } },
                 font = Arial,
                 fontSize = 42,
@@ -532,14 +532,14 @@ function scene:show( event )
                 strokeWidth = 10,
 
                 -- Changing button colors (Default = not clicked, over = clicked)
-                fillColor = { default = { 0.6, 1, 0.2 }, over = { 0.3, 0.5, 0.1 } },
+                fillColor = { default = { 0.5, 0056, 0 }, over = { 0.3, 0.5, 0.1 } },
                 strokeColor = { default = { 0.75, 0, 0 }, over = { 0.5, 0, 0 } },
                 
                 -- Creating text on button
-                label = "Zoom In Out Fade", -- The text labeled on the button
+                label = "Move In Out Disappear", -- The text labeled on the button
                 labelColor = { default = { 1, 1, 1 }, over = { 1, 1, 1 } },
                 font = Arial,
-                fontSize = 42,
+                fontSize = 30,
 
                 -- Button Functions
                 onRelease = Transition_ZoomInOutFade -- This function is executed when the touch of the button is Released
@@ -562,11 +562,11 @@ function scene:show( event )
                 strokeWidth = 10,
 
                 -- Changing button colors (Default = not clicked, over = clicked)
-                fillColor = { default = { 0.2, 1, 0.2 }, over = { 0.1, 0.5, 0.1 } },
+                fillColor = { default = { 0.098, 1, 0.8 }, over = { 0.1, 0.5, 0.1 } },
                 strokeColor = { default = { 0.75, 0, 0 }, over = { 0.5, 0, 0 } },
                 
                 -- Creating text on button
-                label = "Flip", -- The text labeled on the button
+                label = "Turn", -- The text labeled on the button
                 labelColor = { default = { 1, 1, 1 }, over = { 1, 1, 1 } },
                 font = Arial,
                 fontSize = 42,
@@ -592,14 +592,14 @@ function scene:show( event )
                 strokeWidth = 10,
 
                 -- Changing button colors (Default = not clicked, over = clicked)
-                fillColor = { default = { 0.2, 1, 0.6 }, over = { 0.1, 0.5, 0.3 } },
+                fillColor = { default = { 0.098, 1, 0.8 }, over = { 0.1, 0.5, 0.3 } },
                 strokeColor = { default = { 0.75, 0, 0 }, over = { 0.5, 0, 0 } },
                 
                 -- Creating text on button
-                label = "Flip Fade Out In", -- The text labeled on the button
+                label = "Turn Disappear Out In", -- The text labeled on the button
                 labelColor = { default = {0, 0, 0 }, over = { 0, 0, 0 } },
                 font = Arial,
-                fontSize = 42,
+                fontSize = 33,
 
                 -- Button Functions
                 onRelease = Transition_FlipFadeOutIn -- This function is executed when the touch of the button is Released
@@ -622,11 +622,11 @@ function scene:show( event )
                 strokeWidth = 10,
 
                 -- Changing button colors (Default = not clicked, over = clicked)
-                fillColor = { default = { 0.2, 1, 1 }, over = { 0.1, 0.5, 0.5 } },
+                fillColor = { default = { 0.5, 0056, 0 }, over = { 0.1, 0.5, 0.5 } },
                 strokeColor = { default = { 0.75, 0, 0 }, over = { 0.5, 0, 0 } },
                 
                 -- Creating text on button
-                label = "Zoom O-I Rotate", -- The text labeled on the button
+                label = "Move O-I Rotate", -- The text labeled on the button
                 labelColor = { default = { 0, 0, 0 }, over = { 0, 0, 0 } },
                 font = Arial,
                 fontSize = 42,
@@ -652,14 +652,14 @@ function scene:show( event )
                 strokeWidth = 10,
 
                 -- Changing button colors (Default = not clicked, over = clicked)
-                fillColor = { default = { 0.2, 0.6, 1 }, over = { 0.1, 0.3, 0.5 } },
+                fillColor = { default = { 0.5, 0056, 0 }, over = { 0.1, 0.3, 0.5 } },
                 strokeColor = { default = { 0.75, 0, 0 }, over = { 0.5, 0, 0 } },
                 
                 -- Creating text on button
-                label = "Z O-I Fade Rotate", -- The text labeled on the button
+                label = "Z O-I Disappear Turn", -- The text labeled on the button
                 labelColor = { default = { 1, 1, 1 }, over = { 1, 1, 1 } },
                 font = Arial,
-                fontSize = 42,
+                fontSize = 32,
 
                 -- Button Functions
                 onRelease = Transition_ZoomOutInFadeRotate -- This function is executed when the touch of the button is Released
@@ -682,11 +682,11 @@ function scene:show( event )
                 strokeWidth = 10,
 
                 -- Changing button colors (Default = not clicked, over = clicked)
-                fillColor = { default = { 0.2, 0.2, 1 }, over = { 0.1, 0.1, 0.5 } },
+                fillColor = { default = { 0.5, 0056, 0 }, over = { 0.1, 0.1, 0.5 } },
                 strokeColor = { default = { 0.75, 0, 0 }, over = { 0.5, 0, 0 } },
                 
                 -- Creating text on button
-                label = "Zoom I-O Rotate", -- The text labeled on the button
+                label = "Move I-O Turn", -- The text labeled on the button
                 labelColor = { default = { 1, 1, 1 }, over = { 1, 1, 1 } },
                 font = Arial,
                 fontSize = 42,
@@ -712,14 +712,14 @@ function scene:show( event )
                 strokeWidth = 10,
 
                 -- Changing button colors (Default = not clicked, over = clicked)
-                fillColor = { default = { 0.6, 0.2, 1 }, over = { 0.3, 0.2, 0.5 } },
+                fillColor = { default = { 0, 0, 0 }, over = { 0.3, 0.2, 0.5 } },
                 strokeColor = { default = { 0.75, 0, 0 }, over = { 0.5, 0, 0 } },
                 
                 -- Creating text on button
-                label = "Z I-O Fade Rotate", -- The text labeled on the button
+                label = "Z I-O Disappear Turn", -- The text labeled on the button
                 labelColor = { default = { 1, 1, 1 }, over = { 1, 1, 1 } },
                 font = Arial,
-                fontSize = 42,
+                fontSize = 34,
 
                 -- Button Functions
                 onRelease = Transition_ZoomInOutFadeRotate -- This function is executed when the touch of the button is Released
@@ -742,14 +742,14 @@ function scene:show( event )
                 strokeWidth = 10,
 
                 -- Changing button colors (Default = not clicked, over = clicked)
-                fillColor = { default = { 1, 0.2, 1 }, over = { 0.5, 0.1, 0.5 } },
+                fillColor = { default = { 0.2, 0.6, 0.5 }, over = { 0.5, 0.1, 0.5 } },
                 strokeColor = { default = { 0.75, 0, 0 }, over = { 0.5, 0, 0 } },
                 
                 -- Creating text on button
-                label = "From Right", -- The text labeled on the button
+                label = "Away From Right", -- The text labeled on the button
                 labelColor = { default = { 1, 1, 1 }, over = { 1, 1, 1 } },
                 font = Arial,
-                fontSize = 42,
+                fontSize = 30,
 
                 -- Button Functions
                 onRelease = Transition_FromRight -- This function is executed when the touch of the button is Released
@@ -772,14 +772,14 @@ function scene:show( event )
                 strokeWidth = 10,
 
                 -- Changing button colors (Default = not clicked, over = clicked)
-                fillColor = { default = { 0.6, 0.6, 0.6 }, over = { 0.3, 0.3, 0.3 } },
+                fillColor = { default = { 0.2, 0.6, 0.5 }, over = { 0.3, 0.3, 0.3 } },
                 strokeColor = { default = { 0.75, 0, 0 }, over = { 0.5, 0, 0 } },
                 
                 -- Creating text on button
-                label = "From Left", -- The text labeled on the button
+                label = "Away From Left", -- The text labeled on the button
                 labelColor = { default = { 1, 1, 1 }, over = { 1, 1, 1 } },
                 font = Arial,
-                fontSize = 42,
+                fontSize = 30,
 
                 -- Button Functions
                 onRelease = Transition_FromLeft -- This function is executed when the touch of the button is Released
@@ -802,14 +802,14 @@ function scene:show( event )
                 strokeWidth = 10,
 
                 -- Changing button colors (Default = not clicked, over = clicked)
-                fillColor = { default = { 0.8, 0, 0 }, over = { 0.4, 0, 0 } },
+                fillColor = { default = { 0.2, 0.6, 0.5 }, over = { 0.4, 0, 0 } },
                 strokeColor = { default = { 0.75, 0, 0 }, over = { 0.5, 0, 0 } },
                 
                 -- Creating text on button
-                label = "From Top", -- The text labeled on the button
+                label = "Away From Top", -- The text labeled on the button
                 labelColor = { default = { 1, 1, 1 }, over = { 1, 1, 1 } },
                 font = Arial,
-                fontSize = 42,
+                fontSize = 30,
 
                 -- Button Functions
                 onRelease = Transition_FromTop -- This function is executed when the touch of the button is Released
@@ -832,14 +832,14 @@ function scene:show( event )
                 strokeWidth = 10,
 
                 -- Changing button colors (Default = not clicked, over = clicked)
-                fillColor = { default = { 0, 0.8, 0 }, over = { 0, 0.4, 0 } },
+                fillColor = { default = { 0.2, 0.6, 0.5 }, over = { 0, 0.4, 0 } },
                 strokeColor = { default = { 0.75, 0, 0 }, over = { 0.5, 0, 0 } },
                 
                 -- Creating text on button
-                label = "From Bottom", -- The text labeled on the button
+                label = "Away From Bottom", -- The text labeled on the button
                 labelColor = { default = { 1, 1, 1 }, over = { 1, 1, 1 } },
                 font = Arial,
-                fontSize = 42,
+                fontSize = 26,
 
                 -- Button Functions
                 onRelease = Transition_FromBottom -- This function is executed when the touch of the button is Released
@@ -862,11 +862,11 @@ function scene:show( event )
                 strokeWidth = 10,
 
                 -- Changing button colors (Default = not clicked, over = clicked)
-                fillColor = { default = { 0, 0, 0.8 }, over = { 0, 0, 0.4 } },
+                fillColor = { default = { 0.7, 0.3, 0.45 }, over = { 0, 0, 0.4 } },
                 strokeColor = { default = { 0.75, 0, 0 }, over = { 0.5, 0, 0 } },
                 
                 -- Creating text on button
-                label = "Slide Left", -- The text labeled on the button
+                label = "Smooth Left", -- The text labeled on the button
                 labelColor = { default = { 1, 1, 1 }, over = { 1, 1, 1 } },
                 font = Arial,
                 fontSize = 42,
@@ -892,11 +892,11 @@ function scene:show( event )
                 strokeWidth = 10,
 
                 -- Changing button colors (Default = not clicked, over = clicked)
-                fillColor = { default = { 1, 0.5, 0 }, over = { 0.5, 0.25, 0 } },
+                fillColor = { default = { 0.7, 0.3, 0.45 }, over = { 0.5, 0.25, 0 } },
                 strokeColor = { default = { 0.75, 0, 0 }, over = { 0.5, 0, 0 } },
                 
                 -- Creating text on button
-                label = "Slide Right", -- The text labeled on the button
+                label = "Smooth Right", -- The text labeled on the button
                 labelColor = { default = { 1, 1, 1 }, over = { 1, 1, 1 } },
                 font = Arial,
                 fontSize = 42,
@@ -922,11 +922,11 @@ function scene:show( event )
                 strokeWidth = 10,
 
                 -- Changing button colors (Default = not clicked, over = clicked)
-                fillColor = { default = { 0.8, 0, 0.8 }, over = { 0.4, 0, 0.4 } },
+                fillColor = { default = { 0.7, 0.3, 0.45 }, over = { 0.4, 0, 0.4 } },
                 strokeColor = { default = { 0.75, 0, 0 }, over = { 0.5, 0, 0 } },
                 
                 -- Creating text on button
-                label = "Slide Down", -- The text labeled on the button
+                label = "Smooth Down", -- The text labeled on the button
                 labelColor = { default = { 1, 1, 1 }, over = { 1, 1, 1 } },
                 font = Arial,
                 fontSize = 42,
@@ -952,11 +952,11 @@ function scene:show( event )
                 strokeWidth = 10,
 
                 -- Changing button colors (Default = not clicked, over = clicked)
-                fillColor = { default = {0, 0.6, 0.6 }, over = { 0, 0.3, 0.3 } },
+                fillColor = { default = { 0.7, 0.3, 0.45 }, over = { 0, 0.3, 0.3 } },
                 strokeColor = { default = { 0.75, 0, 0 }, over = { 0.5, 0, 0 } },
                 
                 -- Creating text on button
-                label = "Slide Up", -- The text labeled on the button
+                label = "Smooth Up", -- The text labeled on the button
                 labelColor = { default = { 1, 1, 1 }, over = { 1, 1, 1 } },
                 font = Arial,
                 fontSize = 42,
